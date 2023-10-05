@@ -1,13 +1,62 @@
-/* .SearchUser {
-
-} */
 
 .Header {
     color: white;
     display: flex;
-    gap: 30em;
+    gap: 33em;
 }
 
 .Header > p {
     font-size: 2em;
+}
+
+.Switch {
+    border: none;
+    color: white;
+    background-color: #141D2E;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+}
+
+.Search {
+    background-color:#1E2B48;
+    width: 48em;
+    height: 4em;
+    border-radius: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11em;
+}
+
+.inputField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+input {
+    height: 3em;
+    background-color: #1E2B48;
+    border: none;
+    outline: none;
+    color: white;
+    width: 30em;
+    font-family: 'Space Mono', monospace;
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Space Mono', monospace;
+}
+
+.SearchBtn {
+    width: 7.5em;
+    height: 3.5em;
+    border-radius: 0.7em;
+    color: white;
+    background-color: #0077FF;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
 }

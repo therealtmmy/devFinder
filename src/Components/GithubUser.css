@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.User {
+    background-color:#1E2B48;
+    border-radius: 0.7em;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    gap: 2em;
+    height: 25em;
+    width: 45em;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+img {
+    border-radius: 100%;
+    width: 8em;
+    padding-top: 30px;
+}
+
+.UserName {
+    display: flex;
+    gap: 12em;
+    align-items: center;
+}
+
+.UserDetails {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 3em;
+    background-color: #141D2E;
+    width: 27em;
+    border-radius: 0.7em;
+}
+
+.UserSocials {
+    margin-top: 30px;
+    line-height: 35px;
+}
+
+.Social1{
+    display: flex;
+    gap: 9.7em;
+}
+
+.Social2{
+    display: flex;
+    gap: 6em;
+}

@@ -8,13 +8,15 @@ const SearchUser = () => {
     <div className='SearchUser'>
       <div className='Header'>
           <p>devfinder</p>
-          <button>LIGHT <FaRegLightbulb /></button>
+          <button className='Switch'>LIGHT <FaRegLightbulb /></button>
       </div>
 
-      <div>
-        <FaSearch/>
-        <input type="text" />
-        <button>Search</button>
+      <div className='Search'>
+        <div className='inputField'>
+        <FaSearch style={{color: "#0077FF", fontSize: "20px"}}/>
+        <input type="text"placeholder='Search GitHub Username...'/>
+        </div>
+        <button className='SearchBtn'>Search</button>
       </div>
     </div>
   )
