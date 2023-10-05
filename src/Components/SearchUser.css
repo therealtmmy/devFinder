@@ -1,0 +1,13 @@
+/* .SearchUser {
+
+} */
+
+.Header {
+    color: white;
+    display: flex;
+    gap: 30em;
+}
+
+.Header > p {
+    font-size: 2em;
+}
