@@ -40,16 +40,20 @@ img {
 }
 
 .UserSocials {
+    display: flex;
     margin-top: 30px;
     line-height: 35px;
+    gap: 6em;
 }
 
 .Social1{
     display: flex;
-    gap: 9.7em;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .Social2{
     display: flex;
-    gap: 6em;
+    flex-direction: column;
+    gap: 1em;
 }

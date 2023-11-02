@@ -22,7 +22,7 @@ const GithubUser = ({user}) => {
                style={Styling}>{user.name}</p>
           </div>
               <a 
-              href={user.html_url} 
+              href={user.html_url} target='blank'
               style={{color: 'blue'}}>@{user.login}</a>
 
       <p>
@@ -52,13 +52,13 @@ const GithubUser = ({user}) => {
             <span><FaMapMarkerAlt/> 
             {user.location ? (<span> {user.location}</span>) : (<span> Unavailable</span>)}</span>
 
-              <a href=""><FaTwitter/>{user.twitter_username ? (<span>{user.twitter_username}</span>) : (<span> Unavailable</span>)}</a>
+             <a href={user.repos_url}>
+                <FaLink/> Github Repo</a>
           
             </div>
 
               <div className='Social2'>
-              <a href="https://github.blog">
-                <FaLink/> https://github.blog</a>
+              <a href=""><FaTwitter/> {user.twitter_username ? (<span>{user.twitter_username}</span>) : (<span> Unavailable</span>)}</a>
              <span>
               <FaRegBuilding/> {user.company ? (<span>{user.company}</span>) : (<span> Unavailable </span>)}</span>
             </div>
