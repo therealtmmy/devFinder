@@ -15,9 +15,20 @@ const SearchUser = () => {
 
   const onSearch = (e) => {
     e.preventDefault()
-    alert(`${search}`)
+     if(search === ""){
+      alert("Please Provide a Valid Username")
+      return accessUser
+    }  
+
+    fetch(`https://api.github.com/users/${search}`)
+    .then(res => res.json())
+    .then(output => {setAccessUser(prevState => {
+      return [output]
+    })})
+    setSearch("")
   }
 
+  
   return (
     <div className='SearchUser'>
       <div className='Header'>

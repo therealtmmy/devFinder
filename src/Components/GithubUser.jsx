@@ -20,7 +20,6 @@ const GithubUser = ({user}) => {
           <div className='UserName'>
               <p 
                style={Styling}>{user.name}</p>
-              <p>Joined 21 Jan 2001</p>
           </div>
               <a 
               href={user.html_url} 
