@@ -1,17 +1,20 @@
 import React from 'react'
-import {FaMoon, FaRegLightbulb} from "react-icons/fa";
-import {FaSearch} from "react-icons/fa";
+import {FaSearch, FaMoon, FaRegLightbulb} from "react-icons/fa";
 import "../Components/SearchUser.css"
+import GithubUser from './GithubUser';
 import { useState } from 'react';
+import data from "./user.json"
 
 const SearchUser = () => {
   const [show, setShow] = useState(true)
+  const [accessUser, setAccessUser] = useState(data)
   const [search, setSearch] = useState("")
   const toggleShow = () => {
     setShow(!show)
   }
 
-  const onSearch = () => {
+  const onSearch = (e) => {
+    e.preventDefault()
     alert(`${search}`)
   }
 
@@ -38,6 +41,8 @@ const SearchUser = () => {
         <button className='SearchBtn'>Search</button>
       </div>
       </form> 
+
+      {accessUser.map((user, index) => <GithubUser key={index} user={user}/>)}
     </div>
   )
 }

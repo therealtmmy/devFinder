@@ -1,9 +1,8 @@
 import React from 'react'
 import { FaMapMarkerAlt, FaTwitter, FaLink, FaRegBuilding } from "react-icons/fa";
 import "../Components/GithubUser.css"
-import user from "./user.json"
 
-const GithubUser = () => {
+const GithubUser = ({user}) => {
   const Styling = {
     fontSize: "20px", 
     fontWeight: "700"
@@ -51,8 +50,10 @@ const GithubUser = () => {
 
           <div className='UserSocials'>
             <div className='Social1'>
-            <span><FaMapMarkerAlt/> {user.location}</span>
-               <a href=""><FaTwitter/>{user.twitter_username ? (<p>{user.twitter_username}</p>) : (<span> Unavailable</span>)}</a>
+            <span><FaMapMarkerAlt/> 
+            {user.location ? (<span> {user.location}</span>) : (<span> Unavailable</span>)}</span>
+
+              <a href=""><FaTwitter/>{user.twitter_username ? (<span>{user.twitter_username}</span>) : (<span> Unavailable</span>)}</a>
           
             </div>
 
